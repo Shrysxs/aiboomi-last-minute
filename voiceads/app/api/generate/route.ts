@@ -31,11 +31,17 @@ Business context:
 Instructions:
 1. Identify recurring phrases, benefits, and trust signals from the reviews.
 2. Use ONLY these insights to generate advertising content.
-3. Do NOT invent claims, numbers, awards, or guarantees.
+3. Do NOT invent claims, numbers, awards, guarantees, or outcomes.
 4. Use the brand tone specified. Keep language concise, human, and confident.
-5. Prefer direct phrases from reviews where possible.
-6. If a detail is missing in reviews, omit it.
+5. Prefer direct phrases from reviews where possible (quote or lightly paraphrase).
+6. If a detail is missing in reviews, omit it entirely.
 7. Keep CTAs simple and grounded (no aggressive hype).
+8. Headlines should be 4–8 words, body copy 1–2 short sentences.
+9. Avoid generic marketing jargon ("world-class", "best-in-class", "unmatched").
+10. Ensure each text ad highlights a distinct theme from reviews.
+11. For marketing_copy.value_points, keep each point to a short phrase.
+12. For marketing_copy.social_proof, use a single sentence in first-person plural (e.g., "Guests mention...").
+13. Output must be valid JSON only, no markdown or commentary.
 
 Return VALID JSON in the following structure:
 
