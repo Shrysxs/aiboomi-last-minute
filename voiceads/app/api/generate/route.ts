@@ -109,8 +109,10 @@ export async function POST(request: Request) {
 
   const prompt = buildPrompt(body);
 
+  const model = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
+
   const requestBody = {
-    model: "llama-3.1-70b-versatile",
+    model,
     temperature: 0.4,
     messages: [
       {
@@ -141,7 +143,11 @@ export async function POST(request: Request) {
     if (!response.ok) {
       const error = await response.json();
       return NextResponse.json(
-        { error: error?.error?.message || "AI request failed." },
+        {
+          error:
+            error?.error?.message ||
+            `AI request failed. If this is a model error, set GROQ_MODEL (current: ${model}).`,
+        },
         { status: 500 }
       );
     }
