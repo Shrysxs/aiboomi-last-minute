@@ -10,6 +10,10 @@
   <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
 </p>
 
+<p align="center">
+  <a href="https://voiceads.vercel.app" target="_blank"><strong>🚀 Live Demo →</strong></a>
+</p>
+
 ---
 
 ## The Problem
@@ -26,6 +30,39 @@ VOICEADS analyzes real customer reviews to extract recurring phrases, benefits, 
 - Structured JSON for programmatic or internal use
 
 Because every output is rooted in authentic customer language, the result is advertising that feels credible and resonates.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+| Tool | Version |
+|------|---------|
+| Node.js | v18 or higher |
+| npm or yarn | Latest |
+| LLM API Key | Required (see `.env.local` setup below) |
+
+### Installation & Setup
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd voiceads
+
+# Install dependencies
+npm install
+
+# Create your environment file and add your LLM API key
+cp .env.example .env.local
+# Edit .env.local and set:
+#   LLM_API_KEY=your_api_key_here
+
+# Start the development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser. Paste in customer reviews and let VOICEADS do the rest.
 
 ---
 
@@ -103,8 +140,14 @@ All input is customer reviews provided manually by the user (pasted text). No ex
 
 | Name | Role | Description |
 |------|------|-------------|
-| **Pradnyesh** | Product Head / CEO | Owns product vision, user experience, and the core idea of turning customer voice into trustworthy advertising content. |
-| **Shreyas** | Full-Stack Developer | Built the application end-to-end — frontend, backend, and AI integration. Mostly here for the side quest, but made sure the core product actually works. |
+| **[Pradnyesh](https://x.com/Pradnyesh_25)** | Product Head / CEO | Owns product vision, user experience, and the core idea of turning customer voice into trustworthy advertising content. |
+| **[Shreyas](https://x.com/Shrysxs)** | Full-Stack Developer | Built the application end-to-end — frontend, backend, and AI integration. Mostly here for the side quest, but made sure the core product actually works. |
+
+---
+
+## Contributing
+
+Contributions are welcome. If you have ideas, found a bug, or want to add a feature, open an issue or submit a pull request.
 
 ---
 
